@@ -1,0 +1,38 @@
+<h1>Interploation</h1>
+
+{{fullName}}
+<br>
+{{"Welcome " + fullName}}
+<br>
+{{fullName.length}}
+<br>
+{{fullName.toUpperCase()}}
+<br>
+{{url}}
+
+<h1>Property Binding</h1>
+
+<input type="text" [id]="textId" />
+
+<input type="text" id={{textId}} />
+
+<button disabled={{isDisabled}}>Interpolation</button>
+<button [disabled]="isDisabled">Property Binding</button>
+
+<h1>Class binding</h1>
+
+<h3 class="text-danger">Welcome to Angular Course</h3>
+<h3 [class]="textColor">Welcome again</h3>
+<h3 [class.text-danger]="hasError">ITI</h3>
+
+<h3 [ngClass]="messageClasses">Welcome to ITI</h3>
+
+<h1>Style Binding</h1>
+
+<h3 style="color:red">Welcome to Angular Course</h3>
+
+<h3 [style.color]="colorStyle">Welcome again</h3>
+
+<h3 [style.color]="hasError ? 'red' : 'green' ">Abanoub Nabil</h3>
+
+<h3 [ngStyle]="styleObject">Abanoub Nabil</h3>
