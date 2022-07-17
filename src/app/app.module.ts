@@ -12,6 +12,11 @@ import { DataBinidngComponent } from './data-binidng/data-binidng.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { SquarePipe } from './square.pipe';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { FormsModule } from '@angular/forms';
     RightNavComponent,
     DataBinidngComponent,
     EventBindingComponent,
-    TwoWayBindingComponent
+    TwoWayBindingComponent,
+    StructuralDirectivesComponent,
+    PipesComponent,
+    SquarePipe,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
