@@ -17,7 +17,15 @@ import { PipesComponent } from './pipes/pipes.component';
 import { SquarePipe } from './square.pipe';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
-
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import {HttpClientModule} from '@angular/common/http';
+import { PostFormComponent } from './post-form/post-form.component';
+import { DepartmentsComponent } from './departments/departments.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DepartmentDetailsComponent } from './department-details/department-details.component';
+import { OverviewComponent } from './overview/overview.component';
+import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +41,21 @@ import { ChildComponent } from './child/child.component';
     PipesComponent,
     SquarePipe,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    EmployeeListComponent,
+    EmployeeDetailsComponent,
+    PostFormComponent,
+    DepartmentsComponent,
+    PageNotFoundComponent,
+    DepartmentDetailsComponent,
+    OverviewComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
